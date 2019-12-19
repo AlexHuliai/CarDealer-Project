@@ -60,7 +60,7 @@
                             out.println("<li class=\"w3-hover-sand\">" + s + "</li><button onclick=\"window.location.href = '/transaction';\">Purchase Car</button>");
                         }
                         out.println("</ul>");
-
+//adsadsadsa
                     } else out.println("<div class=\"w3-panel w3-red w3-display-container w3-card-4 w3-round\">\n"
                             +
                             "   <span onclick=\"this.parentElement.style.display='none'\"\n" +

@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb49dae4-3491-40b1-b6e8-5d550a38dadb" name="Default Changelist" comment="" />
+    <list default="true" id="cb49dae4-3491-40b1-b6e8-5d550a38dadb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/list.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +31,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -43,6 +49,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1V1lCSUxgQZXA6jBxRuXeBclrvY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -222,6 +229,7 @@
       <workItem from="1576597246289" duration="1459000" />
       <workItem from="1576601816920" duration="16881000" />
       <workItem from="1576639049687" duration="18207000" />
+      <workItem from="1576775453728" duration="450000" />
     </task>
     <servers />
   </component>
