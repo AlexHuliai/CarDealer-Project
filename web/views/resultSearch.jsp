@@ -21,12 +21,26 @@
     List<String> names = (List<String>) request.getAttribute("carNames1");
     Object names1 =  request.getAttribute("carNames2");
 
-    for(int i = 0;i<names.size();i++){
-        String[] s2 = names.get(i).split(" ");
-        if(s2[1].equalsIgnoreCase(names1.toString())){
-            out.println("<li class=\"w3-hover-sand\">" + names.get(i) + "</li>");
+
+        for (int i = 0; i < names.size(); i++) {
+            String[] s2 = names.get(i).split(" ");
+            if (s2[1].equalsIgnoreCase(names1.toString())) {
+                out.println("<li class=\"w3-hover-sand\">" + s2[0] + " " + s2[1] + " " + s2[2] + " " + s2[3] + " " + s2[4] + " " + s2[5] + " " + s2[6] + " " + s2[7] + " " + s2[8] + " " + s2[9] + "</li>");
+                out.println("<img src=\"" + s2[10] + "\" style=\"width: 800px; height :500px;\" alt=\"as\">");
+                out.println("</ul>");
+            }
+            else if
+            (!s2[1].equalsIgnoreCase(names1.toString())) {
+                out.println("<div class=\"w3-panel w3-red w3-display-container w3-card-4 w3-round\">\n"
+                        +
+                        "   <span onclick=\"this.parentElement.style.display='none'\"\n" +
+                        "   class=\"w3-button w3-margin-right w3-display-right w3-round-large w3-hover-red w3-border w3-border-red w3-hover-border-grey\">×</span>\n" +
+                        "   <h5>There are no cars that match the search parameter!</h5>\n" +
+                        "</div>");
+                i=names.size();
+            }
         }
-    }
+
 
 
 %>

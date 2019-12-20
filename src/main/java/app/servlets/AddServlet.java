@@ -6,6 +6,8 @@ import app.model.Model;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -33,18 +35,25 @@ public class AddServlet extends HttpServlet {
         String miles = req.getParameter("miles");
         String dateSubmited = req.getParameter("dateSubmited");
         String price = req.getParameter("price");
+        String image = req.getParameter("image");
 
 
 
-        Car car = new Car(make,model1,year, engine, transmision, color, vin,miles, dateSubmited, price);
+
+        Car car = new Car(make,model1,year, engine, transmision, color, vin,miles, dateSubmited, price,image);
+        car.saveToFile();
         Model model = Model.getInstance();
-
-
         model.add(car);
         List<String> names = model.list();
 
-        req.setAttribute("carNames",names);
-        doGet(req, resp);
+        req.setAttribute("carNames", names);
+
+
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("views/list.jsp");
+        requestDispatcher.forward(req, resp);
+
+
+
     }
 }
 

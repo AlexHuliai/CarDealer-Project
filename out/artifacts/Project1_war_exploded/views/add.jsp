@@ -14,11 +14,12 @@
 </div>
 <div class="w3-container w3-padding">
     <%
+
         if (request.getAttribute("carNames") != null) {
             out.println("<div class=\"w3-panel w3-green w3-display-container w3-card-4 w3-round\">\n" +
                     "   <span onclick=\"this.parentElement.style.display='none'\"\n" +
                     "   class=\"w3-button w3-margin-right w3-display-right w3-round-large w3-hover-green w3-border w3-border-green w3-hover-border-grey\">×</span>\n" +
-                    "   <h5>Car '" + "' added!</h5>\n" +
+                    "   <h5>Car '' added!</h5>\n" +
                     "</div>");
         }
     %>
@@ -52,10 +53,13 @@
                 <input type="text" name="miles" class="w3-input w3-animate-input w3-border w3-round-large" style="width: 30%"><br />
             </label>
             <label>DateSubmitted:
-                <input type="text" name="dateSubmited"  value="mm/dd/year" class="w3-input w3-animate-input w3-border w3-round-large" style="width: 30%"><br />
+                <input type="text" name="dateSubmited"   class="w3-input w3-animate-input w3-border w3-round-large" style="width: 30%"><br />
             </label>
             <label>Price:
-                <input type="text" name="price" value="$" class="w3-input w3-animate-input w3-border w3-round-large" style="width: 30%"><br />
+                <input type="text" name="price"  class="w3-input w3-animate-input w3-border w3-round-large" style="width: 30%"><br />
+            </label>
+            <label>Image Url:
+                <input type="text" name="image"  class="w3-input w3-animate-input w3-border w3-round-large" style="width: 30%"><br />
             </label>
             <button type="submit" class="w3-btn w3-green w3-round-large w3-margin-bottom">Submit</button>
         </form>

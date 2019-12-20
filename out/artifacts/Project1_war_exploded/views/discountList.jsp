@@ -44,7 +44,9 @@
                    long days = ChronoUnit.DAYS.between(date,now);
                         if(days>120){
                             out.println("<ul class=\"w3-ul\">");
-                            out.println("<li class=\"w3-hover-sand\">" + names.get(i) + "</li><button onclick=\"window.location.href = '/bid';\">Bid Here</button>");
+                            out.println("<li class=\"w3-hover-sand\">" + s2[0]+" "+s2[1]+" "+s2[2]+" "+s2[3]+" "+s2[4]+" "+s2[5]+" "+s2[6]+" "+s2[7]+" "+s2[8]+" "+s2[9] +"</li>");
+                            out.println("<img src=\""+s2[10]+"\" style=\"width: 800px; height :500px;\" alt=\"as\">");
+                            out.println("<button onclick=\"window.location.href = '/bid';\">Bid Here</button>");
                             out.println("</ul>");
                         }
                 }
